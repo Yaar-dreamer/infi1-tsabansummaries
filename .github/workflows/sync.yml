@@ -2,9 +2,7 @@ name: Sync Google Drive HTML to GitHub Pages
 
 on:
   schedule:
-    # Runs every 15 minutes
     - cron: '*/15 * * * *'
-  # Enables manual sync triggers directly from the GitHub UI
   workflow_dispatch:
 
 jobs:
@@ -17,9 +15,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download HTML file from Google Drive
+      - name: Download HTML file and add timestamp
         run: |
-          curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o index.html
+          # 1. Download file from Google Drive
+          curl -sL "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID" -o index.html
+
+          # 2. Generate timestamp (e.g., 2026-10-21 19:00 UTC)
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+
+          # 3. Define the HTML banner
+          BANNER="<div style='background-color: #f4f4f5; color: #52525b; text-align: center; padding: 8px; font-family: sans-serif; font-size: 13px; border-bottom: 1px solid #e4e4e7;'>Last updated: $TIMESTAMP</div>"
+
+          # 4. Inject banner right after <body> tag if it exists, otherwise prepend to top
+          if grep -q -i "<body>" index.html; then
+            sed -i "s|<body>|<body>$BANNER|gI" index.html
+          else
+            echo "$BANNER$(cat index.html)" > index.html
+          fi
 
       - name: Commit and push changes
         run: |
@@ -29,6 +41,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected in Google Drive file."
           else
-            git commit -m "Auto-update index.html from Google Drive"
+            git commit -m "Auto-update index.html from Google Drive with timestamp"
             git push
           fi
