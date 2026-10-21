@@ -20,11 +20,11 @@ jobs:
           # 1. Download file from Google Drive
           curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o index.html
 
-          # 2. Generate timestamp
-          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          # 2. Generate timestamp in Israel Time (Asia/Jerusalem) without timezone label
+          TIMESTAMP=$(TZ="Asia/Jerusalem" date +"%Y-%m-%d %H:%M")
 
-          # 3. Define the HTML banner
-          BANNER="<div style='background-color: #f4f4f5; color: #52525b; text-align: center; padding: 8px; font-family: sans-serif; font-size: 13px; border-bottom: 1px solid #e4e4e7;'>Last updated: $TIMESTAMP</div>"
+          # 3. Define the HTML banner in Hebrew with RTL text direction
+          BANNER="<div style='background-color: #f4f4f5; color: #52525b; text-align: center; padding: 8px; font-family: sans-serif; font-size: 13px; border-bottom: 1px solid #e4e4e7;' dir='rtl'>עודכן לאחרונה: $TIMESTAMP</div>"
 
           # 4. Inject banner right after <body> tag if it exists, otherwise prepend to top
           if grep -q -i "<body>" index.html; then
@@ -41,7 +41,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes detected in Google Drive file."
           else
-            git commit -m "Auto-update index.html from Google Drive with timestamp"
+            git commit -m "Auto-update index.html from Google Drive with Hebrew timestamp"
             git pull --rebase origin main
             git push
           fi
