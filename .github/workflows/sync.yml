@@ -19,7 +19,7 @@ jobs:
       - name: Download HTML file and update if changed
         run: |
           # 1. Download file to a temporary file
-          curl -sL "https://drive.google.com/uc?export=download&id=1r9fgTCJ8XQlM1lsXRS9Z4dkPjVCOVsiO" -o temp_drive.html
+          curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o temp_drive.html
 
           # 2. Check if download succeeded and is valid HTML
           if [ ! -s temp_drive.html ] || grep -q -i "Error 404" temp_drive.html; then
