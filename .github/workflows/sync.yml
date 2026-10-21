@@ -20,7 +20,7 @@ jobs:
           # 1. Download file from Google Drive
           curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o index.html
 
-          # 2. Generate timestamp (e.g., 2026-10-21 19:00 UTC)
+          # 2. Generate timestamp
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
 
           # 3. Define the HTML banner
@@ -33,8 +33,7 @@ jobs:
             echo "$BANNER$(cat index.html)" > index.html
           fi
 
-
-  - name: Commit and push changes
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
