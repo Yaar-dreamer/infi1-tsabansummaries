@@ -18,7 +18,7 @@ jobs:
       - name: Download HTML file and add timestamp
         run: |
           # 1. Download file from Google Drive
-          curl -sL "https://drive.google.com/uc?export=download&id=YOUR_GOOGLE_DRIVE_FILE_ID" -o index.html
+          curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o index.html
 
           # 2. Generate timestamp (e.g., 2026-10-21 19:00 UTC)
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
