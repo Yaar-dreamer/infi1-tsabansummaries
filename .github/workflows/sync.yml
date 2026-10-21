@@ -33,7 +33,8 @@ jobs:
             echo "$BANNER$(cat index.html)" > index.html
           fi
 
-      - name: Commit and push changes
+
+  - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -42,5 +43,6 @@ jobs:
             echo "No changes detected in Google Drive file."
           else
             git commit -m "Auto-update index.html from Google Drive with timestamp"
+            git pull --rebase origin main
             git push
           fi
