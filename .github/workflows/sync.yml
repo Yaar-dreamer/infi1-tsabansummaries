@@ -1,0 +1,34 @@
+name: Sync Google Drive HTML to GitHub Pages
+
+on:
+  schedule:
+    # Automatically runs every day at 00:00 UTC (adjust cron expression as needed)
+    - cron: '0 0 * * *'
+  # Enables manual sync triggers directly from the GitHub UI
+  workflow_dispatch:
+
+jobs:
+  sync-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download HTML file from Google Drive
+        run: |
+          curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o index.html
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "No changes detected in Google Drive file."
+          else
+            git commit -m "Auto-update index.html from Google Drive"
+            git push
+          fi
