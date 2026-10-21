@@ -2,7 +2,7 @@ name: Sync Google Drive HTML to GitHub Pages
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Download HTML file and add timestamp
         run: |
           # 1. Download file from Google Drive
-          curl -sL "https://drive.google.com/uc?export=download&id=1jxCqTNUQuDHti_7NxLGGgMzeAbgv7Ucl" -o index.html
+          curl -sL "https://drive.google.com/uc?export=download&id=1r9fgTCJ8XQlM1lsXRS9Z4dkPjVCOVsiO" -o index.html
 
           # 2. Generate timestamp in Israel Time (Asia/Jerusalem) without timezone label
           TIMESTAMP=$(TZ="Asia/Jerusalem" date +"%Y-%m-%d %H:%M")
