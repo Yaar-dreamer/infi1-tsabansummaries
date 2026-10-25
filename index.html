@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="אינפי 1, בועז צבאן — חסמים; סדרות והתכנסות; חשבון גבולות; סדרות מונוטוניות ואי-שיויונים. תקציר הקורס עם נוסחאות מתמטיות וגודל גופן לבחירה.">
-  <meta name="source-sha256" content="67fb9414c501dd439004b7e71a22592f5938c53a991d7bc27d4de84021f7ec04">
-  <title>אינפי 1 — תקציר הקורס: פרקים 1–4 | בועז צבאן</title>
+  <meta name="description" content="אינפי 1, בועז צבאן — חסמים; סדרות והתכנסות; חשבון גבולות; סדרות מונוטוניות ואי-שיויונים; התכנסות במובן הרחב. תקציר הקורס עם נוסחאות מתמטיות וגודל גופן לבחירה.">
+  <meta name="source-sha256" content="2a8dcd21298aa05f66e260d8dffed5ff6555af354144912445e1d51f7de6b539">
+  <title>אינפי 1 — תקציר הקורס: פרקים 1–5 | בועז צבאן</title>
   <style>
     :root { --reading-size: 20px; color-scheme: light; }
     * { box-sizing: border-box; }
@@ -124,7 +124,7 @@
   </script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js" onerror="document.getElementById('math-status').textContent='לא ניתן לטעון את MathJax. להצגת הנוסחאות יש לבדוק את החיבור לאינטרנט ולרענן את הדף.'"></script>
 </head>
-<body><div style='background-color: #f4f4f5; color: #52525b; text-align: center; padding: 8px; font-family: sans-serif; font-size: 13px; border-bottom: 1px solid #e4e4e7;' dir='rtl'>עודכן לאחרונה: 2026-10-25 16:44</div>
+<body><div style='background-color: #f4f4f5; color: #52525b; text-align: center; padding: 8px; font-family: sans-serif; font-size: 13px; border-bottom: 1px solid #e4e4e7;' dir='rtl'>עודכן לאחרונה: 2026-10-25 20:02</div>
   <a class="skip" href="#content">דילוג לתוכן</a>
   <div class="shell">
     <header>
@@ -1095,14 +1095,15 @@ a_{n} &amp; \xrightarrow[n\to\infty]{}a
 <details class="outline-section" id="navigation-chapter-4-section-3"><summary class="section-trigger" aria-controls="chapter-4-section-3-content"><h3 id="chapter-4-section-3">4.3 משפט הסנדביץ&#x27;</h3></summary><div class="section-content" id="chapter-4-section-3-content">
 
 <ol class="level-0">
-<li id="c4-s3-1"><details class="hint-stage" id="hint-c4-s3-1"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement"><span class="bold">משפט הסנדביץ&#x27;:</span> אם <span class="math inline" data-origin="outline" dir="ltr">\(c\longleftarrow a_{n}\le c_{n}\le b_{n}\longrightarrow c\)</span>, אז <span class="math inline" data-origin="outline" dir="ltr">\(c_{n}\longrightarrow c\)</span>.</span></summary><div class="hint-content"><details class="proof" id="proof-c4-s3-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}-c\le c_{n}-c\le b_{n}-c\)</span> ולכן <span class="math inline" data-origin="outline" dir="ltr">\(\left|c_{n}-c\right|\le\left|b_{n}-c\right|+\left|a_{n}-c\right|\longrightarrow0\)</span>.</span></span></summary><div class="proof-body" data-kind="proof">
-<div class="proof-step"><div class="step-line"><span class="step-text">לפי 3.3.2(ד), שתי הסדרות <span class="math inline" data-origin="proof" dir="ltr">\((|a_n-c|)\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\((|b_n-c|)\)</span> אפסות. לכן, לפי כלל הסכום, גם <span class="math inline" data-origin="proof" dir="ltr">\(d_n:=|a_n-c|+|b_n-c|\longrightarrow0\)</span>.</span>
+<li id="c4-s3-1"><details class="hint-stage" id="hint-c4-s3-1"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement"><span class="bold">משפט הסנדביץ&#x27;:</span> אם <span class="math inline" data-origin="outline" dir="ltr">\(c\longleftarrow a_{n}\le c_{n}\le b_{n}\longrightarrow c\)</span>, אז <span class="math inline" data-origin="outline" dir="ltr">\(c_{n}\longrightarrow c\)</span>.</span></summary><div class="hint-content"><details class="proof" id="proof-c4-s3-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(\left|c_{n}-c\right|\le\left|c_{n}-b_{n}\right|+\left|b_{n}-c\right|\le\left|a_{n}-b_{n}\right|+\left|b_{n}-c\right|\longrightarrow0\)</span>.</span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">מכיוון ש־<span class="math inline" data-origin="proof" dir="ltr">\(a_n\le c_n\le b_n\)</span>, מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(|c_n-b_n|=b_n-c_n\le b_n-a_n=|a_n-b_n|\)</span>. לכן אי־שוויון המשולש נותן בדיוק את האומדן שברמז: <span class="math display" data-origin="proof" dir="ltr">\[|c_n-c|\le|c_n-b_n|+|b_n-c|\le|a_n-b_n|+|b_n-c|.\]</span></span>
 </div>
 </div>
-<div class="proof-step"><div class="step-line"><span class="step-text">מכיוון ש־<span class="math inline" data-origin="proof" dir="ltr">\(a_n\le c_n\le b_n\)</span>, מתקיים <span class="math display" data-origin="proof" dir="ltr">\[|c_n-c|\le |a_n-c|+|b_n-c|=d_n.\]</span> לפי ההשוואה לסדרה אפסה, 3.3.2(ג), גם <span class="math inline" data-origin="proof" dir="ltr">\((c_n-c)\)</span> אפסה. לפי 3.3.2(ד), <span class="math inline" data-origin="proof" dir="ltr">\(c_n\longrightarrow c\)</span>. אותו טיעון עובד כאשר אי־השוויונים מתקיימים רק לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>.</span>
-<button type="button" class="reason-toggle" aria-label="נימוק לצעד 2" title="נימוק לצעד זה" aria-expanded="false" aria-controls="why-c4-s3-1-2">?</button>
+<div class="proof-step"><div class="step-line"><span class="step-text">לפי כלל הצירוף הלינארי, <span class="math inline" data-origin="proof" dir="ltr">\(a_n-b_n\longrightarrow c-c=0\)</span>, ולכן לפי 3.3.2(ב), <span class="math inline" data-origin="proof" dir="ltr">\(|a_n-b_n|\longrightarrow0\)</span>. לפי 3.3.2(ד), גם <span class="math inline" data-origin="proof" dir="ltr">\(|b_n-c|\longrightarrow0\)</span>. כלל הסכום נותן אפוא <span class="math display" data-origin="proof" dir="ltr">\[d_n:=|a_n-b_n|+|b_n-c|\longrightarrow0.\]</span></span>
 </div>
-<div class="why" id="why-c4-s3-1-2" hidden>מצד אחד, <span class="math inline" data-origin="proof" dir="ltr">\(c_n-c\le b_n-c\le|b_n-c|\le d_n\)</span>; מצד שני, <span class="math inline" data-origin="proof" dir="ltr">\(-(c_n-c)=c-c_n\le c-a_n\le|a_n-c|\le d_n\)</span>. לפי 2.1.2(א), הערך המוחלט הוא המקסימום של מספר ושל הנגדי שלו, ולכן גם הוא לכל היותר <span class="math inline" data-origin="proof" dir="ltr">\(d_n\)</span>.</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">מן האומדן <span class="math inline" data-origin="proof" dir="ltr">\(|c_n-c|\le d_n\)</span> ולפי ההשוואה לסדרה אפסה, 3.3.2(ג), נקבל <span class="math inline" data-origin="proof" dir="ltr">\(c_n-c\longrightarrow0\)</span>. לפי 3.3.2(ד), <span class="math inline" data-origin="proof" dir="ltr">\(c_n\longrightarrow c\)</span>. אותו טיעון עובד כאשר אי־השוויונים הנתונים מתקיימים רק לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>.</span>
+</div>
 </div>
 </div></details></div></details></li>
 <li id="c4-s3-2"><details class="proof" id="proof-c4-s3-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">דוגמה: <span class="math inline" data-origin="outline" dir="ltr">\(\frac{\sin n}{n}\longrightarrow0\)</span>.</span></summary><div class="proof-body" data-kind="explanation">
@@ -1184,6 +1185,306 @@ a_{n} &amp; \xrightarrow[n\to\infty]{}a
 </div>
 </div></details></div></details></li>
 </ol>
+
+</div></details>
+</div></details>
+<details class="outline-chapter" id="navigation-chapter-5"><summary class="chapter-trigger" aria-controls="chapter-5-contents"><h2 id="chapter-5">5. התכנסות במובן הרחב</h2></summary><div class="chapter-contents" id="chapter-5-contents">
+
+
+<details class="outline-section" id="navigation-chapter-5-section-1"><summary class="section-trigger" aria-controls="chapter-5-section-1-content"><h3 id="chapter-5-section-1">5.1 שאיפה לאינסוף</h3></summary><div class="section-content" id="chapter-5-section-1-content">
+
+<ol class="level-0">
+<li id="c5-s1-1" data-kind="definition"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow\infty\)</span>: לכל <span class="math inline" data-origin="outline" dir="ltr">\(c\)</span> ממשי מתקיים <span class="math inline" data-origin="outline" dir="ltr">\(c&lt;a_{n}\)</span> לכמעט כל <span class="math inline" data-origin="outline" dir="ltr">\(n\)</span>.<div class="paragraph">(לכל <span class="math inline" data-origin="outline" dir="ltr">\(c\)</span> יש זנב של הסדרה שכל איבריו גדולים מ <span class="math inline" data-origin="outline" dir="ltr">\(c\)</span>.)</div></li>
+<li id="c5-s1-2" data-kind="definition"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow-\infty\)</span> אם לכל <span class="math inline" data-origin="outline" dir="ltr">\(c\)</span> ממשי, מתקיים <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}&lt;c\)</span> לכמעט כל <span class="math inline" data-origin="outline" dir="ltr">\(n\)</span>.<div class="paragraph">(לכל <span class="math inline" data-origin="outline" dir="ltr">\(c\)</span> יש זנב של הסדרה שכל איבריו קטנים מ <span class="math inline" data-origin="outline" dir="ltr">\(c\)</span>.)</div></li>
+<li id="c5-s1-3"><details class="proof" id="proof-c5-s1-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">תרגיל: ההגדרות של התכנסות ל&nbsp;<span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty\)</span> לא ישתנו אם נכתוב <span class="math inline" data-origin="outline" dir="ltr">\(\le\)</span> במקום <span class="math inline" data-origin="outline" dir="ltr">\(&lt;\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אי־שוויון חזק גורר את אי־השוויון החלש המתאים, ולכן ההגדרות המקוריות גוררות את הגרסאות החלשות.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">בכיוון ההפוך, נניח שלכל ממשי <span class="math inline" data-origin="proof" dir="ltr">\(d\)</span> מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(d\le a_n\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. יהי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> ממשי. בהצבת <span class="math inline" data-origin="proof" dir="ltr">\(d=c+1\)</span> נקבל לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;c+1\le a_n\)</span>, ולכן <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\infty\)</span>. אם במקום זאת לכל <span class="math inline" data-origin="proof" dir="ltr">\(d\)</span> מתקיים לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(a_n\le d\)</span>, נציב <span class="math inline" data-origin="proof" dir="ltr">\(d=c-1\)</span> ונקבל <span class="math inline" data-origin="proof" dir="ltr">\(a_n\le c-1&lt;c\)</span>. לכן מתקבלת גם ההגדרה המקורית של שאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s1-4"><details class="proof" id="proof-c5-s1-4"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">דוגמאות: <span class="math inline" data-origin="outline" dir="ltr">\(n^{2}\longrightarrow\infty\)</span>. <span class="math inline" data-origin="outline" dir="ltr">\(-n\longrightarrow-\infty\)</span>. </span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל ממשי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span>, אי־חסימות הטבעיים מאפשרת לבחור טבעי <span class="math inline" data-origin="proof" dir="ltr">\(N&gt;\max\{0,c\}\)</span>. לכל <span class="math inline" data-origin="proof" dir="ltr">\(n&gt;N\)</span>, מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;n\le n^2\)</span>. לכן גם <span class="math inline" data-origin="proof" dir="ltr">\(n\longrightarrow\infty\)</span> וגם <span class="math inline" data-origin="proof" dir="ltr">\(n^2\longrightarrow\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל ממשי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span>, מן השאיפה <span class="math inline" data-origin="proof" dir="ltr">\(n\longrightarrow\infty\)</span> נקבל לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(-c&lt;n\)</span>, כלומר <span class="math inline" data-origin="proof" dir="ltr">\(-n&lt;c\)</span>. זוהי בדיוק השאיפה <span class="math inline" data-origin="proof" dir="ltr">\(-n\longrightarrow-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s1-5" data-kind="definition">סדרה <span class="bold">מתכנסת במובן הרחב</span> אם היא שואפת למספר ממשי (מתכנסת), או שואפת ל <span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty\)</span>.</li>
+<li id="c5-s1-6"><details class="hint-stage" id="hint-c5-s1-6"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement">גבול במובן הרחב הוא יחיד.</span></summary><div class="hint-content"><details class="proof" id="proof-c5-s1-6"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue">לכל שני גבולות שונים במובן הרחב <span class="math inline" data-origin="outline" dir="ltr">\(-\infty\le a&lt;b\le\infty\)</span>, ניקח מספר <span class="math inline" data-origin="outline" dir="ltr">\(a&lt;c&lt;b\)</span>. </span></span><span class="hint-block"><span class="blue">אם <span class="math inline" data-origin="outline" dir="ltr">\(x_{n}\longrightarrow a,b\)</span> אז לכמעט כל <span class="math inline" data-origin="outline" dir="ltr">\(n\)</span> מתקיים <span class="math inline" data-origin="outline" dir="ltr">\(c&lt;x_{n}\)</span> וגם <span class="math inline" data-origin="outline" dir="ltr">\(x_{n}&lt;c\)</span>.</span> <span class="math inline" data-origin="outline" dir="ltr">\(\text{\lightning}\)</span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">נניח בשלילה שלסדרה <span class="math inline" data-origin="proof" dir="ltr">\((x_n)\)</span> שני גבולות שונים במובן הרחב, ונסדר אותם כך ש־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\le a&lt;b\le\infty\)</span>. נבחר מספר ממשי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> ביניהם: אם שניהם ממשיים נבחר את נקודת האמצע; אם רק <span class="math inline" data-origin="proof" dir="ltr">\(a\)</span> ממשי נבחר <span class="math inline" data-origin="proof" dir="ltr">\(a+1\)</span>; אם רק <span class="math inline" data-origin="proof" dir="ltr">\(b\)</span> ממשי נבחר <span class="math inline" data-origin="proof" dir="ltr">\(b-1\)</span>; ואם הם <span class="math inline" data-origin="proof" dir="ltr">\(-\infty,\infty\)</span>, נבחר <span class="math inline" data-origin="proof" dir="ltr">\(0\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">משאיפה לגבול קטן מ־<span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> נובע <span class="math inline" data-origin="proof" dir="ltr">\(x_n&lt;c\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>: עבור גבול ממשי זהו 4.2.1(א), ועבור הגבול <span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span> זו ההגדרה. באותו אופן, משאיפה לגבול גדול מ־<span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> נובע <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;x_n\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>, לפי 4.2.1(ב) או לפי הגדרת השאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">לכן מעבר לשני הספים נקבל יחד <span class="math inline" data-origin="proof" dir="ltr">\(x_n&lt;c&lt;x_n\)</span>, סתירה. מכאן שהגבול במובן הרחב יחיד.</span>
+</div>
+</div>
+</div></details></div></details></li>
+<li id="c5-s1-7"><details class="hint-stage" id="hint-c5-s1-7"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement">דוגמה: הסדרה <span class="math inline" data-origin="outline" dir="ltr">\((-1)^{n}\)</span> לא מתכנסת במובן הרחב.</span></summary><div class="hint-content"><details class="proof" id="proof-c5-s1-7"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue">ראינו שלא שואפת למספר, וקל לראות ש <span class="math inline" data-origin="outline" dir="ltr">\((-1)^{n}\not\longrightarrow\pm\infty\)</span>.</span></span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">ב־2.3.19 כבר הוכחנו של־<span class="math inline" data-origin="proof" dir="ltr">\(((-1)^n)\)</span> אין גבול ממשי. היא גם אינה שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>, שכן אף איבר אינו גדול מ־<span class="math inline" data-origin="proof" dir="ltr">\(1\)</span>; ואינה שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>, שכן אף איבר אינו קטן מ־<span class="math inline" data-origin="proof" dir="ltr">\(-1\)</span>. אלה סתירות להגדרות עם הספים <span class="math inline" data-origin="proof" dir="ltr">\(c=1\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(c=-1\)</span>, בהתאמה. כך נשללו כל האפשרויות להתכנסות במובן הרחב.</span>
+</div>
+</div>
+</div></details></div></details></li>
+</ol>
+
+</div></details>
+<details class="outline-section" id="navigation-chapter-5-section-2"><summary class="section-trigger" aria-controls="chapter-5-section-2-content"><h3 id="chapter-5-section-2">5.2 מונוטוניות ואי-שיויונים</h3></summary><div class="section-content" id="chapter-5-section-2-content">
+
+<ol class="level-0">
+<li id="c5-s2-1"><details class="proof" id="proof-c5-s2-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">כל סדרה עולה ולא חסומה שואפת ל&nbsp;<span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">סדרה עולה חסומה מלרע על ידי <span class="math inline" data-origin="proof" dir="ltr">\(a_1\)</span>. לכן, אם אינה חסומה, אינה חסומה מלעיל. לכל ממשי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> יש אפוא אינדקס <span class="math inline" data-origin="proof" dir="ltr">\(N\)</span> שעבורו <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;a_N\)</span>. מן העלייה נקבל לכל <span class="math inline" data-origin="proof" dir="ltr">\(n\ge N\)</span>, <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;a_N\le a_n\)</span>. זוהי הגדרת השאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s2-2"><details class="proof" id="proof-c5-s2-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">כל סדרה יורדת ולא חסומה שואפת ל&nbsp;<span class="math inline" data-origin="outline" dir="ltr">\(-\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\((a_n)\)</span> יורדת ולא חסומה, אז <span class="math inline" data-origin="proof" dir="ltr">\((-a_n)\)</span> עולה ולא חסומה: מעבר לנגדיים הופך את הסדר ואת שני סוגי החסמים. לפי 5.2.1, <span class="math inline" data-origin="proof" dir="ltr">\(-a_n\longrightarrow\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל סדרה ממשית <span class="math inline" data-origin="proof" dir="ltr">\((u_n)\)</span>, ההגדרות נותנות <span class="math display" data-origin="proof" dir="ltr">\[u_n\longrightarrow-\infty\quad\Longleftrightarrow\quad-u_n\longrightarrow\infty.\]</span> אכן, הדרישה <span class="math inline" data-origin="proof" dir="ltr">\(u_n&lt;c\)</span> שקולה ל־<span class="math inline" data-origin="proof" dir="ltr">\(-u_n&gt;-c\)</span>, וכאשר <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> עובר על כל הממשיים, כך גם <span class="math inline" data-origin="proof" dir="ltr">\(-c\)</span>. נפעיל זאת על <span class="math inline" data-origin="proof" dir="ltr">\((a_n)\)</span> ונקבל <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s2-3"><details class="proof" id="proof-c5-s2-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">כל סדרה מונוטונית מתכנסת במובן הרחב.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם הסדרה המונוטונית חסומה, היא מתכנסת לגבול ממשי לפי 4.1.2. אם אינה חסומה, היא עולה או יורדת, ולפי 5.2.1 או 5.2.2 היא שואפת בהתאמה ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span> או ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>. בכל מקרה היא מתכנסת במובן הרחב.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s2-4" data-kind="group"><span class="bold">משפט הסנדביץ&#x27; לגבול <span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty\)</span>:</span><ol class="level-1">
+<li id="c5-s2-4-1"><details class="proof" id="proof-c5-s2-4-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">אם <span class="math inline" data-origin="outline" dir="ltr">\(\infty\longleftarrow a_{n}\le b_{n}\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(b_{n}\longrightarrow\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">יהי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> ממשי. מכיוון ש־<span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\infty\)</span>, לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span> מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;a_n\le b_n\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow\infty\)</span>. הטיעון תקף גם אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\le b_n\)</span> רק לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>: עוברים את שני הספים.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s2-4-2"><details class="proof" id="proof-c5-s2-4-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">אם <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\le b_{n}\longrightarrow-\infty\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow-\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">מעבר לנגדיים נותן <span class="math inline" data-origin="proof" dir="ltr">\(-b_n\le-a_n\)</span>, ולפי השקילות שהוכחנו ב־5.2.2, <span class="math inline" data-origin="proof" dir="ltr">\(-b_n\longrightarrow\infty\)</span>. לפי (א), <span class="math inline" data-origin="proof" dir="ltr">\(-a_n\longrightarrow\infty\)</span>, ושוב לפי אותה שקילות, <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow-\infty\)</span>. כמו ב־(א), די באי־שוויון המתקיים לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+</ol></li>
+<li id="c5-s2-5"><details class="proof" id="proof-c5-s2-5"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">מסקנה: אם <span class="math inline" data-origin="outline" dir="ltr">\(a\longleftarrow a_{n}\le b_{n}\longrightarrow b\)</span> במובן הרחב, אז <span class="math inline" data-origin="outline" dir="ltr">\(a\le b\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">נניח בשלילה ש־<span class="math inline" data-origin="proof" dir="ltr">\(b&lt;a\)</span>. כפי שהראינו בהוכחת 5.1.6, אפשר לבחור ממשי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> עם <span class="math inline" data-origin="proof" dir="ltr">\(b&lt;c&lt;a\)</span>. אותה השוואה לקבוע מן ההוכחה ההיא נותנת לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(b_n&lt;c\)</span> וגם <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;a_n\)</span>, גם כאשר אחד הגבולות אינסופי. יחד עם ההנחה נקבל <span class="math inline" data-origin="proof" dir="ltr">\(a_n\le b_n&lt;c&lt;a_n\)</span>, סתירה. לכן <span class="math inline" data-origin="proof" dir="ltr">\(a\le b\)</span>. גם כאן די באי־השוויון הנתון לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+</ol>
+
+</div></details>
+<details class="outline-section" id="navigation-chapter-5-section-3"><summary class="section-trigger" aria-controls="chapter-5-section-3-content"><h3 id="chapter-5-section-3">5.3 חשבון גבולות במובן הרחב</h3></summary><div class="section-content" id="chapter-5-section-3-content">
+
+<ol class="level-0">
+<li id="c5-s3-1"><details class="proof" id="proof-c5-s3-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">“<span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span> + קבוע = <span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span>”: סכום של סדרה <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow\infty\)</span> וסדרה חסומה מלרע שואף ל&nbsp;<span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">יהי <span class="math inline" data-origin="proof" dir="ltr">\(m\)</span> חסם מלרע של הסדרה השנייה <span class="math inline" data-origin="proof" dir="ltr">\((b_n)\)</span>, ויהי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> ממשי. מן <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\infty\)</span> נקבל לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(c-m&lt;a_n\)</span>, ולכן <span class="math display" data-origin="proof" dir="ltr">\[c&lt;a_n+m\le a_n+b_n.\]</span> לפי ההגדרה, <span class="math inline" data-origin="proof" dir="ltr">\(a_n+b_n\longrightarrow\infty\)</span>. למעשה, די בכך ש־<span class="math inline" data-origin="proof" dir="ltr">\(m\le b_n\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>, שכן אפשר לעבור גם את הסף הזה.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-2" data-kind="definition"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow a^{+}\)</span>: <span class="math inline" data-origin="outline" dir="ltr">\(a&lt;a_{n}\longrightarrow a\)</span>.</li>
+<li id="c5-s3-3" data-kind="definition"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow a^{-}\)</span>: <span class="math inline" data-origin="outline" dir="ltr">\(a\longleftarrow a_{n}&lt;a\)</span>.</li>
+<li id="c5-s3-4"><details class="proof" id="proof-c5-s3-4"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">“<span class="math inline" data-origin="outline" dir="ltr">\(\frac{1}{0^{+}}=\infty\)</span>”: אם <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow0^{+}\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(\frac{1}{a_{n}}\longrightarrow\infty\)</span>. </span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">יהי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> ממשי, ונבחר <span class="math inline" data-origin="proof" dir="ltr">\(M=\max\{1,c\}&gt;0\)</span>. מכיוון ש־<span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow0^+\)</span>, כל <span class="math inline" data-origin="proof" dir="ltr">\(a_n&gt;0\)</span>, ולבסוף <span class="math inline" data-origin="proof" dir="ltr">\(a_n&lt;1/M\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(1/a_n&gt;M\ge c\)</span>. מצאנו לכל <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> זנב של סדרת ההופכיים שכל איבריו גדולים ממנו, ולכן <span class="math inline" data-origin="proof" dir="ltr">\(1/a_n\longrightarrow\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-5"><details class="hint-stage" id="hint-c5-s3-5"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement">“<span class="math inline" data-origin="outline" dir="ltr">\(\frac{1}{\pm\infty}=0\)</span>”: אם <span class="math inline" data-origin="outline" dir="ltr">\(0\neq\left|a_{n}\right|\longrightarrow\infty\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(\frac{1}{a_{n}}\longrightarrow0\)</span>.</span></summary><div class="hint-content"><details class="proof" id="proof-c5-s3-5"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(\frac{1}{\left|a_{n}\right|}\longrightarrow0^{+}\)</span>.</span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל <span class="math inline" data-origin="proof" dir="ltr">\(\epsilon&gt;0\)</span>, מן השאיפה <span class="math inline" data-origin="proof" dir="ltr">\(|a_n|\longrightarrow\infty\)</span> נקבל לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(|a_n|&gt;1/\epsilon\)</span>, ולכן <span class="math inline" data-origin="proof" dir="ltr">\(0&lt;1/|a_n|&lt;\epsilon\)</span>. לפי 3.3.2(א), <span class="math inline" data-origin="proof" dir="ltr">\(1/|a_n|\longrightarrow0\)</span>, ומכיוון שכל האיברים חיוביים, זוהי שאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(0^+\)</span>, בדיוק כפי שמוצע ברמז.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">בהוכחת 3.6.1 כבר הראינו שלכל <span class="math inline" data-origin="proof" dir="ltr">\(x\ne0\)</span>, <span class="math inline" data-origin="proof" dir="ltr">\(|1/x|=1/|x|\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(|1/a_n|\longrightarrow0\)</span>, ולפי 3.3.2(ב), גם <span class="math inline" data-origin="proof" dir="ltr">\(1/a_n\longrightarrow0\)</span>.</span>
+</div>
+</div>
+</div></details></div></details></li>
+<li id="c5-s3-6"><details class="proof" id="proof-c5-s3-6"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">“<span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span> כפול קבוע חיובי = <span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span>”: אם <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow\infty\)</span> ו&nbsp;<span class="math inline" data-origin="outline" dir="ltr">\(b_{n}\longrightarrow b&gt;0\)</span>, אז <span class="math inline" data-origin="outline" dir="ltr">\(a_{n}b_{n}\longrightarrow\infty\)</span>. </span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">מכיוון ש־<span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow b&gt;0\)</span>, לפי 4.2.1(ב) מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(b_n&gt;b/2&gt;0\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. יהי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> ממשי. מן <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\infty\)</span> נקבל לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(a_n&gt;\max\{0,2c/b\}\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">מעבר לשני הספים, <span class="math inline" data-origin="proof" dir="ltr">\(a_n&gt;0\)</span>, ולכן <span class="math display" data-origin="proof" dir="ltr">\[a_nb_n&gt;\frac b2a_n&gt;\max\{0,c\}\ge c.\]</span> זוהי השאיפה <span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n\longrightarrow\infty\)</span>. בפרט, הטענה חלה כשהסדרה השנייה קבועה וחיובית.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-7"><details class="proof" id="proof-c5-s3-7"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">לא נכון עבור סדרה חיובית: <span class="math inline" data-origin="outline" dir="ltr">\(\frac{a}{n}\cdot n=a\longrightarrow a\)</span>. </span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">נבחר <span class="math inline" data-origin="proof" dir="ltr">\(a&gt;0\)</span>. הסדרה <span class="math inline" data-origin="proof" dir="ltr">\(a/n\)</span> חיובית ושואפת לאפס לפי כלל הכפל בקבוע, ואילו <span class="math inline" data-origin="proof" dir="ltr">\(n\longrightarrow\infty\)</span>, לפי 5.1.4. מכפלתן היא הסדרה הקבועה <span class="math inline" data-origin="proof" dir="ltr">\(a\)</span>, שגבולה <span class="math inline" data-origin="proof" dir="ltr">\(a\)</span>, ולא <span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>. ההנחה החסרה היא שלסדרה החיובית יש גבול חיובי ממש.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">בדוגמה השנייה, <span class="math inline" data-origin="proof" dir="ltr">\(1\le2+(-1)^n\le3\)</span>, ולכן <span class="math inline" data-origin="proof" dir="ltr">\((2+(-1)^n)/n\)</span> חיובית ואפסה לפי 3.3.3. המכפלה ב־<span class="math inline" data-origin="proof" dir="ltr">\(n\)</span> היא <span class="math inline" data-origin="proof" dir="ltr">\(2+(-1)^n\)</span>. אילו היה לה גבול ממשי <span class="math inline" data-origin="proof" dir="ltr">\(L\)</span>, כלל הצירוף הלינארי היה נותן <span class="math inline" data-origin="proof" dir="ltr">\((-1)^n\longrightarrow L-2\)</span>, בניגוד ל־2.3.19. היא גם אינה שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(\pm\infty\)</span>, כי היא נשארת בין <span class="math inline" data-origin="proof" dir="ltr">\(1\)</span> ל־<span class="math inline" data-origin="proof" dir="ltr">\(3\)</span>.</span>
+</div>
+</div>
+</div></details><div class="paragraph">אפשר לסדר גם שלא יהיה גבול: <span class="math inline" data-origin="outline" dir="ltr">\(\frac{2+(-1)^{n}}{n}\cdot n=2+(-1)^{n}\)</span>.</div></li>
+<li id="c5-s3-8"><details class="proof" id="proof-c5-s3-8"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement">בדומה עבור <span class="math inline" data-origin="outline" dir="ltr">\(-\infty\)</span>, וכן אם מחליפים &quot;חיובי&quot; ב&quot;שלילי&quot;.</span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">לפי 5.2.2, מעבר לנגדי מחליף שאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span> בשאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>, ולהפך. בגבול ממשי, כלל הכפל ב־<span class="math inline" data-origin="proof" dir="ltr">\(-1\)</span> נותן <span class="math inline" data-origin="proof" dir="ltr">\(u_n\longrightarrow u\Rightarrow-u_n\longrightarrow-u\)</span>. לכן אפשר להעביר את המקרים השליליים למקרים שכבר הוכחנו.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">למשל, אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow-\infty\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\((b_n)\)</span> חסומה מלעיל, אז <span class="math inline" data-origin="proof" dir="ltr">\(-a_n\longrightarrow\infty\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\((-b_n)\)</span> חסומה מלרע. לפי 5.3.1, <span class="math inline" data-origin="proof" dir="ltr">\(-(a_n+b_n)=(-a_n)+(-b_n)\longrightarrow\infty\)</span>, ולכן <span class="math inline" data-origin="proof" dir="ltr">\(a_n+b_n\longrightarrow-\infty\)</span>. די גם בחסם מלעיל על זנב.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">במכפלה שבה גורם אחד שואף ל־<span class="math inline" data-origin="proof" dir="ltr">\(\pm\infty\)</span> והשני לגבול ממשי שאינו אפס, מחליפים כל סדרה בעלת גבול שלילי בנגדית שלה. כעת הגורמים שואפים ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span> ולמספר חיובי, והמכפלה שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span> לפי 5.3.6. אם הוחלף גורם אחד, המכפלה המקורית שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>; אם הוחלפו שניים או אף אחד, היא שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow0^-\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\(-a_n\longrightarrow0^+\)</span>, ולפי 5.3.4 מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(-1/a_n=1/(-a_n)\longrightarrow\infty\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(1/a_n\longrightarrow-\infty\)</span>. כמו כן, אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\pm\infty\)</span>, אז לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(|a_n|\)</span> גדול מכל סף חיובי, ולכן <span class="math inline" data-origin="proof" dir="ltr">\(|a_n|\longrightarrow\infty\)</span>; על זנב שבו האיברים אינם אפס, 5.3.5 נותן <span class="math inline" data-origin="proof" dir="ltr">\(1/a_n\longrightarrow0\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-9" data-kind="group">סיכום חיבור:<ol class="level-1">
+<li id="c5-s3-9-1"><details class="proof" id="proof-c5-s3-9-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(a+b=b+a\)</span>, במובן שאם אחד האגפים מוגדר אז השני מוגדר ושווה לו.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">הסימונים בסיכום מתארים את גבול סכומן של סדרות מתוך גבולותיהן. לכל שתי סדרות ממשיות מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(a_n+b_n=b_n+a_n\)</span> לכל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. לכן כל כלל הקובע את גבול הסכום בסדר אחד קובע את אותו גבול גם בסדר ההפוך.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-9-2"><details class="proof" id="proof-c5-s3-9-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\infty+\infty=\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n,b_n\longrightarrow\infty\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\(b_n&gt;0\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. לכן הסדרה השנייה חסומה מלרע על זנב, ו־5.3.1, בגרסתו לזנב, נותן <span class="math inline" data-origin="proof" dir="ltr">\(a_n+b_n\longrightarrow\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-9-3"><details class="proof" id="proof-c5-s3-9-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\((-\infty)+(-\infty)=-\infty\)</span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n,b_n\longrightarrow-\infty\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\(-a_n,-b_n\longrightarrow\infty\)</span>. לפי (ב), <span class="math inline" data-origin="proof" dir="ltr">\(-(a_n+b_n)=(-a_n)+(-b_n)\longrightarrow\infty\)</span>, ולכן לפי כלל המעבר לנגדי, <span class="math inline" data-origin="proof" dir="ltr">\(a_n+b_n\longrightarrow-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-9-4"><details class="proof" id="proof-c5-s3-9-4"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty+c=\pm\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow c\in\mathbb R\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\((b_n)\)</span> חסומה לפי 3.2.3, ובפרט חסומה גם מלרע וגם מלעיל. עבור <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\infty\)</span> מפעילים את 5.3.1; עבור <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow-\infty\)</span> מפעילים את גרסתו השלילית מ־5.3.8. הסכום שואף בהתאמה ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span> ול־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-9-5"><details class="proof" id="proof-c5-s3-9-5"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\infty-\infty\)</span> לא מוגדר.</span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">ניקח בשתי דוגמאות את הסדרה <span class="math inline" data-origin="proof" dir="ltr">\(n\longrightarrow\infty\)</span>. הסדרה השנייה תהיה פעם <span class="math inline" data-origin="proof" dir="ltr">\(-n\longrightarrow-\infty\)</span>, ופעם <span class="math inline" data-origin="proof" dir="ltr">\(1-n\longrightarrow-\infty\)</span>, לפי כלל החיבור השלילי מ־5.3.8. הסכומים הם בהתאמה <span class="math inline" data-origin="proof" dir="ltr">\(0\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(1\)</span>, ולכן גבולותיהם שונים אף שגבולות המחוברים זהים. לפיכך אין ערך יחיד שאפשר לקבוע לביטוי <span class="math inline" data-origin="proof" dir="ltr">\(\infty-\infty\)</span> מתוך גבולות המחוברים בלבד.</span>
+</div>
+</div>
+</div></details></li>
+</ol></li>
+<li id="c5-s3-10" data-kind="group">סיכום כפל:<ol class="level-1">
+<li id="c5-s3-10-1"><details class="proof" id="proof-c5-s3-10-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(a\cdot b=b\cdot a\)</span>, במובן שאם אחד האגפים מוגדר אז השני מוגדר ושווה לו.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל שתי סדרות ממשיות, <span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n=b_na_n\)</span> לכל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>, מחילופיות הכפל בממשיים. לכן כל כלל הקובע את גבול המכפלה מתוך גבולות הגורמים תקף באותה מידה לאחר החלפת סדרם.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-10-2"><details class="proof" id="proof-c5-s3-10-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\((-\infty)\cdot(-\infty)=\infty\cdot\infty=\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n,b_n\longrightarrow\infty\)</span>, אז לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(a_n\ge1\)</span> וגם <span class="math inline" data-origin="proof" dir="ltr">\(b_n&gt;0\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n\ge b_n\)</span>, ומשפט ההשוואה 5.2.4(א), התקף גם על זנב, נותן <span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n\longrightarrow\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">אם שני הגבולות הם <span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>, שתי הסדרות הנגדיות שואפות ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>. לפי המקרה שהוכחנו, <span class="math inline" data-origin="proof" dir="ltr">\((-a_n)(-b_n)\longrightarrow\infty\)</span>. מכפלה זו שווה ל־<span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n\)</span>, ולכן גם המכפלה המקורית שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-10-3"><details class="proof" id="proof-c5-s3-10-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(-\infty\cdot\infty=-\infty\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow-\infty\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow\infty\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\(-a_n\longrightarrow\infty\)</span>, ולפי (ב), <span class="math inline" data-origin="proof" dir="ltr">\((-a_n)b_n\longrightarrow\infty\)</span>. מאחר שזו הנגדית של המכפלה המקורית, <span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n\longrightarrow-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-10-4"><details class="proof" id="proof-c5-s3-10-4"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty\cdot c=\pm\infty\)</span> כאשר <span class="math inline" data-origin="outline" dir="ltr">\(0&lt;c\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">עבור <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow\infty\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow c&gt;0\)</span>, זהו בדיוק 5.3.6. כאשר <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow-\infty\)</span>, מפעילים את כלל הסימנים מ־5.3.8: החלפת הסדרה הראשונה בנגדית נותנת מכפלה השואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>, ולכן המכפלה המקורית שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-10-5"><details class="proof" id="proof-c5-s3-10-5"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty\cdot c=\mp\infty\)</span> כאשר <span class="math inline" data-origin="outline" dir="ltr">\(c&lt;0\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow c&lt;0\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\(-b_n\longrightarrow-c&gt;0\)</span>. לפי (ד), המכפלה <span class="math inline" data-origin="proof" dir="ltr">\(a_n(-b_n)\)</span> שואפת לאותו אינסוף כמו <span class="math inline" data-origin="proof" dir="ltr">\((a_n)\)</span>. המכפלה <span class="math inline" data-origin="proof" dir="ltr">\(a_nb_n\)</span> היא הנגדית שלה, ולכן היא שואפת לאינסוף בעל הסימן ההפוך.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-10-6"><details class="proof" id="proof-c5-s3-10-6"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\pm\infty\cdot0\)</span> לא מוגדר.</span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">בשתי הדוגמאות <span class="math inline" data-origin="proof" dir="ltr">\(n\cdot(1/n)=1\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(n\cdot(2/n)=2\)</span>, הגורם הראשון שואף ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span> והשני לאפס, אך גבולות המכפלות שונים. אם מחליפים את <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span> ב־<span class="math inline" data-origin="proof" dir="ltr">\(-n\)</span>, מקבלים באותה דרך גבולות שונים <span class="math inline" data-origin="proof" dir="ltr">\(-1,-2\)</span> עבור אותה צורה <span class="math inline" data-origin="proof" dir="ltr">\((-\infty)\cdot0\)</span>. לכן אף אחת מהצורות אינה קובעת גבול.</span>
+</div>
+</div>
+</div></details></li>
+</ol></li>
+<li id="c5-s3-11" data-kind="group">סיכום חילוק:<ol class="level-1">
+<li id="c5-s3-11-1"><details class="proof" id="proof-c5-s3-11-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\frac{\pm\infty}{c}=\pm\infty\)</span> כאשר <span class="math inline" data-origin="outline" dir="ltr">\(0&lt;c\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow c&gt;0\)</span>, אז לפי 4.2.1, <span class="math inline" data-origin="proof" dir="ltr">\(b_n&gt;c/2&gt;0\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>, ולכן המנות מוגדרות על זנב. לפי כלל ההופכי 3.6.1, על זנב זה <span class="math inline" data-origin="proof" dir="ltr">\(1/b_n\longrightarrow1/c&gt;0\)</span>. נכתוב <span class="math inline" data-origin="proof" dir="ltr">\(a_n/b_n=a_n(1/b_n)\)</span> ונפעיל את כלל הכפל בגבול חיובי, 5.3.10(ד). נקבל את אותו סימן אינסוף כמו גבול המונה.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-11-2"><details class="proof" id="proof-c5-s3-11-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\frac{\pm\infty}{c}=\mp\infty\)</span> כאשר <span class="math inline" data-origin="outline" dir="ltr">\(c&lt;0\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow c&lt;0\)</span>, אז לפי 4.2.1, <span class="math inline" data-origin="proof" dir="ltr">\(b_n&lt;c/2&lt;0\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. על הזנב הזה כל המכנים שונים מאפס, וכלל ההופכי נותן <span class="math inline" data-origin="proof" dir="ltr">\(1/b_n\longrightarrow1/c&lt;0\)</span>. כלל הכפל בגבול שלילי, 5.3.10(ה), המופעל על <span class="math inline" data-origin="proof" dir="ltr">\(a_n(1/b_n)\)</span>, הופך את סימן האינסוף של המונה.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-11-3"><details class="proof" id="proof-c5-s3-11-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\frac{c}{\pm\infty}=0\)</span>.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow c\in\mathbb R\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(b_n\longrightarrow\pm\infty\)</span>, אז לפי 5.3.8, המכנים שונים מאפס על זנב ו־<span class="math inline" data-origin="proof" dir="ltr">\(1/b_n\longrightarrow0\)</span>. כלל המכפלה לגבולות ממשיים, 3.4.1, נותן על זנב זה <span class="math display" data-origin="proof" dir="ltr">\[\frac{a_n}{b_n}=a_n\frac1{b_n}\longrightarrow c\cdot0=0.\]</span></span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-11-4"><details class="proof" id="proof-c5-s3-11-4"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\frac{\pm\infty}{\infty}\)</span>, <span class="math inline" data-origin="outline" dir="ltr">\(\frac{\pm\infty}{-\infty}\)</span> לא מוגדרים.</span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">בשתי המנות <span class="math inline" data-origin="proof" dir="ltr">\(n/n=1\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\((2n)/n=2\)</span>, המונה והמכנה שואפים ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>, אך הגבולות שונים. השאיפה <span class="math inline" data-origin="proof" dir="ltr">\(2n\longrightarrow\infty\)</span> נובעת מ־5.3.6, עם הגורם הקבוע החיובי <span class="math inline" data-origin="proof" dir="ltr">\(2\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל אחד משלושת צירופי הסימנים האחרים, מחליפים את סימן המונה, המכנה או שניהם באותן שתי דוגמאות. לפי כלל המעבר לנגדי, מתקבלים גבולות המונה והמכנה הרצויים; גבולות המנות נשארים שונים: <span class="math inline" data-origin="proof" dir="ltr">\(1,2\)</span> כששני הסימנים זהים, ו־<span class="math inline" data-origin="proof" dir="ltr">\(-1,-2\)</span> כשהם מנוגדים. לכן אף צירוף של מנה בין גבולות אינסופיים אינו קובע גבול.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s3-11-5"><details class="proof" id="proof-c5-s3-11-5"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(\frac{c}{0}\)</span> לא מוגדר.</span></summary><div class="proof-body" data-kind="explanation">
+<div class="proof-step"><div class="step-line"><span class="step-text">כאשר <span class="math inline" data-origin="proof" dir="ltr">\(c\ne0\)</span>, נשווה את המנות <span class="math inline" data-origin="proof" dir="ltr">\(c/(1/n)=cn\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\(c/(-1/n)=-cn\)</span>. בשתיהן המונה שואף ל־<span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> והמכנה לאפס, אך לפי כללי הכפל בגבול שאינו אפס, המנות שואפות לאינסופים בעלי סימנים מנוגדים.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">גם כש־<span class="math inline" data-origin="proof" dir="ltr">\(c=0\)</span> אין גבול יחיד הנקבע מגבולות המונה והמכנה: המנות <span class="math inline" data-origin="proof" dir="ltr">\((1/n)/(1/n)=1\)</span> ו־<span class="math inline" data-origin="proof" dir="ltr">\((2/n)/(1/n)=2\)</span> נותנות גבולות שונים, ובשתיהן המונה והמכנה שואפים לאפס. כל המכנים בדוגמאות שונים מאפס. לכן הסימון <span class="math inline" data-origin="proof" dir="ltr">\(c/0\)</span> אינו מגדיר כלל גבול; תנאי נוסף כגון שאיפה לאפס מצד מסוים עשוי לאפשר כלל מתאים, כפי שראינו קודם.</span>
+</div>
+</div>
+</div></details></li>
+</ol></li>
+</ol>
+
+</div></details>
+<details class="outline-section" id="navigation-chapter-5-section-4"><summary class="section-trigger" aria-controls="chapter-5-section-4-content"><h3 id="chapter-5-section-4">5.4 סביבות</h3></summary><div class="section-content" id="chapter-5-section-4-content">
+
+<ol class="level-0">
+<li id="c5-s4-1" data-kind="definition"><span class="bold">סביבה של <span class="math inline" data-origin="outline" dir="ltr">\(\infty\)</span>:</span> קבוצה מהצורה <span class="math inline" data-origin="outline" dir="ltr">\(\left(c,\infty\right):=\left\{ x:c&lt;x\right\} \)</span>.</li>
+<li id="c5-s4-2" data-kind="definition"><span class="bold">סביבה של <span class="math inline" data-origin="outline" dir="ltr">\(-\infty\)</span>:</span> קבוצה מהצורה <span class="math inline" data-origin="outline" dir="ltr">\(\left(-\infty,c\right):=\left\{ x:x&lt;c\right\} \)</span>.</li>
+<li id="c5-s4-3"><details class="proof" id="proof-c5-s4-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\longrightarrow a\)</span> במובן הרחב <span class="math inline" data-origin="outline" dir="ltr">\(\Longleftrightarrow\)</span> לכל סביבה של <span class="math inline" data-origin="outline" dir="ltr">\(a\)</span>, יש לסדרה זנב שמוכל בה.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">לגבול ממשי זו בדיוק השקילות שכבר הוכחנו ב־2.3.15. עבור <span class="math inline" data-origin="proof" dir="ltr">\(a=\infty\)</span>, סביבה היא מהצורה <span class="math inline" data-origin="proof" dir="ltr">\((c,\infty)\)</span>, והימצאות זנב בתוכה אומרת בדיוק <span class="math inline" data-origin="proof" dir="ltr">\(c&lt;a_n\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. הדרישה לכל ממשי <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> היא הגדרת השאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">עבור <span class="math inline" data-origin="proof" dir="ltr">\(a=-\infty\)</span>, סביבה היא מהצורה <span class="math inline" data-origin="proof" dir="ltr">\((-\infty,c)\)</span>, והיא מכילה זנב בדיוק כאשר <span class="math inline" data-origin="proof" dir="ltr">\(a_n&lt;c\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. הדרישה לכל <span class="math inline" data-origin="proof" dir="ltr">\(c\)</span> היא הגדרת השאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(-\infty\)</span>. בכל המקרים המעברים הם שקילויות.</span>
+</div>
+</div>
+</div></details></li>
+<li id="c5-s4-4"><details class="proof" id="proof-c5-s4-4"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="statement"><span class="math inline" data-origin="outline" dir="ltr">\(a_{n}\nrightarrow a\)</span> במובן הרחב <span class="math inline" data-origin="outline" dir="ltr">\(\Longleftrightarrow\)</span> יש סביבה של <span class="math inline" data-origin="outline" dir="ltr">\(a\)</span> שאינסוף איברים מהסדרה לא נמצאים בה.</span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">לפי 5.4.3, <span class="math inline" data-origin="proof" dir="ltr">\(a_n\longrightarrow a\)</span> במובן הרחב אם ורק אם לכל סביבה <span class="math inline" data-origin="proof" dir="ltr">\(U\)</span> של <span class="math inline" data-origin="proof" dir="ltr">\(a\)</span>, מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(a_n\in U\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>. בשלילת שני האגפים נקבל שקיימת סביבה <span class="math inline" data-origin="proof" dir="ltr">\(U\)</span> שעבורה לא מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(a_n\in U\)</span> לכמעט כל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">לפי 2.3.4, התנאי האחרון שקול לכך שיש אינסוף אינדקסים <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span> שעבורם <span class="math inline" data-origin="proof" dir="ltr">\(a_n\notin U\)</span>. אלה בדיוק אינסוף האיברים שמחוץ לסביבה בניסוח הטענה; סופרים אינדקסים, גם אם ערכים חוזרים. כל המעברים שקולים, ולכן הוכחנו את שני הכיוונים.</span>
+</div>
+</div>
+</div></details></li>
+</ol>
+
+</div></details>
+<details class="outline-section" id="navigation-chapter-5-section-5"><summary class="section-trigger" aria-controls="chapter-5-section-5-content"><h3 id="chapter-5-section-5">5.5 <span class="purple">הסדרה ההנדסית</span></h3></summary><div class="section-content" id="chapter-5-section-5-content">
+
+<ol class="level-0">
+<li id="c5-s5-1"><details class="hint-stage" id="hint-c5-s5-1"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement"><span class="purple">אם <span class="math inline" data-origin="outline" dir="ltr">\(\left|q\right|&lt;1\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\longrightarrow0\)</span>.</span></span></summary><div class="hint-content"><details class="proof" id="proof-c5-s5-1"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue">על ידי ערך מוחלט, עוברים למקרה <span class="math inline" data-origin="outline" dir="ltr">\(0\le q&lt;1\)</span>.</span></span><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(0\le q^{n}\)</span> יורדת ולכן מתכנסת לגבול <span class="math inline" data-origin="outline" dir="ltr">\(0\le a\)</span>.</span></span><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(a\longleftarrow q^{n+1}=qq^{n}\longrightarrow qa\)</span>, כזנב של הסדרה <span class="math inline" data-origin="outline" dir="ltr">\(\left(q^{n}\right)\)</span>.</span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">נסמן <span class="math inline" data-origin="proof" dir="ltr">\(r=|q|&lt;1\)</span>. מתכונת הערך המוחלט של מכפלה מתקבל <span class="math inline" data-origin="proof" dir="ltr">\(|q^n|=r^n\)</span>, ולכן לפי 3.3.2(ב) מספיק להוכיח <span class="math inline" data-origin="proof" dir="ltr">\(r^n\longrightarrow0\)</span>. אם <span class="math inline" data-origin="proof" dir="ltr">\(r=0\)</span>, כל האיברים אפס. נניח אפוא <span class="math inline" data-origin="proof" dir="ltr">\(0&lt;r&lt;1\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">לכל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>, מתקיים <span class="math inline" data-origin="proof" dir="ltr">\(0&lt;r^{n+1}=r\,r^n&lt;r^n\le r\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\((r^n)\)</span> יורדת וחסומה, ולפי 4.1.2 היא מתכנסת לגבול <span class="math inline" data-origin="proof" dir="ltr">\(a\)</span>. לפי 4.2.2, <span class="math inline" data-origin="proof" dir="ltr">\(a\ge0\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">הסדרה <span class="math inline" data-origin="proof" dir="ltr">\((r^{n+1})\)</span> היא זנב של <span class="math inline" data-origin="proof" dir="ltr">\((r^n)\)</span>, ולכן לפי 2.3.16 גם היא שואפת ל־<span class="math inline" data-origin="proof" dir="ltr">\(a\)</span>. מצד שני, כלל הכפל בקבוע נותן <span class="math inline" data-origin="proof" dir="ltr">\(r\,r^n\longrightarrow ra\)</span>. הזהות <span class="math inline" data-origin="proof" dir="ltr">\(r^{n+1}=r\,r^n\)</span> ויחידות הגבול נותנות <span class="math inline" data-origin="proof" dir="ltr">\(a=ra\)</span>, כלומר <span class="math inline" data-origin="proof" dir="ltr">\((1-r)a=0\)</span>. מאחר ש־<span class="math inline" data-origin="proof" dir="ltr">\(1-r&gt;0\)</span>, בהכרח <span class="math inline" data-origin="proof" dir="ltr">\(a=0\)</span>. לפי ההפחתה בתחילת ההוכחה, גם <span class="math inline" data-origin="proof" dir="ltr">\(q^n\longrightarrow0\)</span>.</span>
+</div>
+</div>
+</div></details></div></details></li>
+<li id="c5-s5-2"><details class="hint-stage" id="hint-c5-s5-2"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement"><span class="purple">אם <span class="math inline" data-origin="outline" dir="ltr">\(1&lt;q\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\longrightarrow\infty\)</span>.</span></span></summary><div class="hint-content"><details class="proof" id="proof-c5-s5-2"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue">נעבור ל&nbsp;<span class="math inline" data-origin="outline" dir="ltr">\(\frac{1}{q}\)</span>.</span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">אם <span class="math inline" data-origin="proof" dir="ltr">\(q&gt;1\)</span>, אז <span class="math inline" data-origin="proof" dir="ltr">\(0&lt;1/q&lt;1\)</span>. לפי 5.5.1, <span class="math inline" data-origin="proof" dir="ltr">\((1/q)^n\longrightarrow0\)</span>, וכל איברי הסדרה חיוביים, ולכן זו שאיפה ל־<span class="math inline" data-origin="proof" dir="ltr">\(0^+\)</span>. לפי 5.3.4, <span class="math display" data-origin="proof" dir="ltr">\[q^n=\frac1{(1/q)^n}\longrightarrow\infty.\]</span> זו בדיוק ההעברה להופכי המוצעת ברמז.</span>
+</div>
+</div>
+</div></details></div></details></li>
+<li id="c5-s5-3"><details class="hint-stage" id="hint-c5-s5-3"><summary class="hint-trigger" title="לחצו לפתיחה או לסגירה של הרמז"><span class="statement"><span class="purple">אם <span class="math inline" data-origin="outline" dir="ltr">\(q\le-1\)</span> אז הסדרה <span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\)</span> לא מתכנסת אפילו במובן הרחב. </span></span></summary><div class="hint-content"><details class="proof" id="proof-c5-s5-3"><summary class="proof-trigger" title="לחצו לפתיחה או לסגירה"><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\nrightarrow\pm\infty\)</span>, לכן מספיק להוכיח <span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\nrightarrow0\)</span> וזה כי <span class="math inline" data-origin="outline" dir="ltr">\(1\le\left|q^{n}\right|\)</span>.</span></span><span class="hint-block"><span class="blue"><span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\le-1\)</span> עבור <span class="math inline" data-origin="outline" dir="ltr">\(n\)</span> אי-זוגי ו <span class="math inline" data-origin="outline" dir="ltr">\(1\le q^{n}\)</span> עבור <span class="math inline" data-origin="outline" dir="ltr">\(n\)</span> זוגי. אם <span class="math inline" data-origin="outline" dir="ltr">\(q^{n}\longrightarrow a\)</span> אז <span class="math inline" data-origin="outline" dir="ltr">\(1\le a\le-1\)</span>. <span class="math inline" data-origin="outline" dir="ltr">\(\text{\lightning}\)</span></span></span></summary><div class="proof-body" data-kind="proof">
+<div class="proof-step"><div class="step-line"><span class="step-text">נניח <span class="math inline" data-origin="proof" dir="ltr">\(q\le-1\)</span>. מאחר ש־<span class="math inline" data-origin="proof" dir="ltr">\(|q|\ge1\)</span>, מונוטוניות החזקה על המספרים הלא־שליליים נותנת <span class="math inline" data-origin="proof" dir="ltr">\(|q|^n\ge1\)</span>. בחזקות זוגיות <span class="math inline" data-origin="proof" dir="ltr">\(q^n=|q|^n\ge1\)</span>, ובחזקות אי־זוגיות <span class="math inline" data-origin="proof" dir="ltr">\(q^n=-|q|^n\le-1\)</span>. יש אינסוף אינדקסים מכל סוג, ולכן לא מתקיים לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(q^n&gt;0\)</span> וגם לא מתקיים לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(q^n&lt;0\)</span>. לפי הגדרות השאיפה, <span class="math inline" data-origin="proof" dir="ltr">\(q^n\nrightarrow\pm\infty\)</span>.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">כדי להשלים את הדרך הראשונה שברמז, נניח שהיה גבול ממשי <span class="math inline" data-origin="proof" dir="ltr">\(q^n\longrightarrow a\)</span>. לפי התכנסות זנב ולפי כלל הכפל בקבוע, <span class="math inline" data-origin="proof" dir="ltr">\(q^{n+1}\longrightarrow a\)</span> וגם <span class="math inline" data-origin="proof" dir="ltr">\(q\,q^n\longrightarrow qa\)</span>. מיחידות הגבול והזהות בין הסדרות נקבל <span class="math inline" data-origin="proof" dir="ltr">\(a=qa\)</span>. מאחר ש־<span class="math inline" data-origin="proof" dir="ltr">\(q\ne1\)</span>, בהכרח <span class="math inline" data-origin="proof" dir="ltr">\(a=0\)</span>. אך <span class="math inline" data-origin="proof" dir="ltr">\(|q^n|\ge1\)</span> לכל <span class="math inline" data-origin="proof" dir="ltr">\(n\)</span>, בסתירה לתנאי ההתכנסות לאפס עם <span class="math inline" data-origin="proof" dir="ltr">\(\epsilon=1\)</span>. כך נשללת גם התכנסות לגבול ממשי.</span>
+</div>
+</div>
+<div class="proof-step"><div class="step-line"><span class="step-text">בדרך השנייה שברמז, נניח שוב <span class="math inline" data-origin="proof" dir="ltr">\(q^n\longrightarrow a\in\mathbb R\)</span>. אם <span class="math inline" data-origin="proof" dir="ltr">\(a&lt;1\)</span>, לפי 4.2.1(א) מתקיים לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(q^n&lt;1\)</span>, בסתירה לאינסוף האינדקסים הזוגיים שבהם <span class="math inline" data-origin="proof" dir="ltr">\(q^n\ge1\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(a\ge1\)</span>. אם <span class="math inline" data-origin="proof" dir="ltr">\(a&gt;-1\)</span>, לפי 4.2.1(ב) מתקיים לבסוף <span class="math inline" data-origin="proof" dir="ltr">\(q^n&gt;-1\)</span>, בסתירה לאינסוף האינדקסים האי־זוגיים שבהם <span class="math inline" data-origin="proof" dir="ltr">\(q^n\le-1\)</span>. לכן <span class="math inline" data-origin="proof" dir="ltr">\(a\le-1\)</span>. קיבלנו <span class="math inline" data-origin="proof" dir="ltr">\(1\le a\le-1\)</span>, סתירה. יחד עם שלילת הגבולות האינסופיים, הסדרה אינה מתכנסת במובן הרחב.</span>
+</div>
+</div>
+</div></details></div></details></li>
+<li id="c5-s5-4" data-kind="group"><span class="purple">סיכום: </span><div class="paragraph"><span class="purple"><span class="math display" data-origin="outline" dir="ltr">\[.q^{n}\longrightarrow\begin{cases}
+\infty &amp; 1&lt;q\\
+1 &amp; q=1\\
+0 &amp; -1&lt;q&lt;1\\
+\mbox{גבול קיים לא} &amp; q\le-1
+\end{cases}\]</span></span></div></li>
+</ol>
 </div></details>
 </div></details></main>
   </div>
@@ -1201,6 +1502,15 @@ a_{n} &amp; \xrightarrow[n\to\infty]{}a
       const stats = window.__infiMathStats = {passes: 0, typesetCalls: 0, typesetElements: 0, lastPass: null};
       function visible(el) {
         return !el.closest('.outline-chapter:not([open]) > .chapter-contents, .outline-section:not([open]) > .section-content, .hint-stage:not([open]) > .hint-content, .proof:not([open]) > .proof-body, .why[hidden]');
+      }
+      function displayTex(el) {
+        // LyX/PDF stores this label in visual word order. Native RTL HTML
+        // needs logical word order before MathJax measures and lays it out.
+        // Keep data-tex verbatim for source-fidelity checks and cache rebuilds.
+        const tex = el.dataset.tex;
+        return el.closest('#c5-s5-4')
+          ? tex.replace('\\mbox{גבול קיים לא}', '\\mbox{לא קיים גבול}')
+          : tex;
       }
       function layoutKey(el) {
         const block = el.closest('.why, .proof-step, .paragraph, li') || content;
@@ -1270,7 +1580,7 @@ a_{n} &amp; \xrightarrow[n\to\infty]{}a
             if (changed.length) {
               MathJax.typesetClear(changed);
               // Retain all unchanged rendering, including temporarily hidden proofs.
-              changed.forEach(el => { el.classList.remove('wide'); el.textContent = el.dataset.tex; });
+              changed.forEach(el => { el.classList.remove('wide'); el.textContent = displayTex(el); });
               await typeset(changed, pass);
               isolateHebrewMathText(changed);
               // A newly rendered formula wider than its paragraph gets a separate
@@ -1286,7 +1596,7 @@ a_{n} &amp; \xrightarrow[n\to\infty]{}a
                 MathJax.typesetClear(wide);
                 wide.forEach(el => {
                   el.classList.add('wide');
-                  el.textContent = '\\[' + el.dataset.tex.slice(2, -2) + '\\]';
+                  el.textContent = '\\[' + displayTex(el).slice(2, -2) + '\\]';
                 });
                 await typeset(wide, pass);
                 isolateHebrewMathText(wide);
